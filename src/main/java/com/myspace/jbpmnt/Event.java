@@ -8,45 +8,71 @@ public class Event implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "EventID")
-	private long eventID;
-	@org.kie.api.definition.type.Label(value = "name")
-	private java.lang.String eventName;
+	@org.kie.api.definition.type.Label(value = "place")
+	private java.lang.String place;
+
+	@org.kie.api.definition.type.Label(value = "id")
+	private java.lang.Long id;
+
 	@org.kie.api.definition.type.Label(value = "owner")
-	private java.lang.String eventOwner;
+	private java.lang.String owner;
+
+	@org.kie.api.definition.type.Label(value = "date")
+	private java.time.LocalDateTime date;
+
+	@org.kie.api.definition.type.Label(value = "fee")
+	private float fee;
 
 	public Event() {
 	}
 
-	public long getEventID() {
-		return this.eventID;
+	public java.lang.String getPlace() {
+		return this.place;
 	}
 
-	public void setEventID(long eventID) {
-		this.eventID = eventID;
+	public void setPlace(java.lang.String place) {
+		this.place = place;
 	}
 
-	public java.lang.String getEventName() {
-		return this.eventName;
+	public java.lang.Long getId() {
+		return this.id;
 	}
 
-	public void setEventName(java.lang.String eventName) {
-		this.eventName = eventName;
+	public void setId(java.lang.Long id) {
+		this.id = id;
 	}
 
-	public java.lang.String getEventOwner() {
-		return this.eventOwner;
+	public java.lang.String getOwner() {
+		return this.owner;
 	}
 
-	public void setEventOwner(java.lang.String eventOwner) {
-		this.eventOwner = eventOwner;
+	public void setOwner(java.lang.String owner) {
+		this.owner = owner;
 	}
 
-	public Event(long eventID, java.lang.String eventName,
-			java.lang.String eventOwner) {
-		this.eventID = eventID;
-		this.eventName = eventName;
-		this.eventOwner = eventOwner;
+	public java.time.LocalDateTime getDate() {
+		return this.date;
+	}
+
+	public void setDate(java.time.LocalDateTime date) {
+		this.date = date;
+	}
+
+	public float getFee() {
+		return this.fee;
+	}
+
+	public void setFee(float fee) {
+		this.fee = fee;
+	}
+
+	public Event(java.lang.String place, java.lang.Long id,
+			java.lang.String owner, java.time.LocalDateTime date, float fee) {
+		this.place = place;
+		this.id = id;
+		this.owner = owner;
+		this.date = date;
+		this.fee = fee;
 	}
 
 }
