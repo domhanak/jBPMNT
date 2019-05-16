@@ -6,12 +6,47 @@ package com.myspace.jbpmnt;
 
 public class Event implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Event() {
-    }
+	@org.kie.api.definition.type.Label(value = "EventID")
+	private long eventID;
+	@org.kie.api.definition.type.Label(value = "name")
+	private java.lang.String eventName;
+	@org.kie.api.definition.type.Label(value = "owner")
+	private java.lang.String eventOwner;
 
+	public Event() {
+	}
 
+	public long getEventID() {
+		return this.eventID;
+	}
 
+	public void setEventID(long eventID) {
+		this.eventID = eventID;
+	}
+
+	public java.lang.String getEventName() {
+		return this.eventName;
+	}
+
+	public void setEventName(java.lang.String eventName) {
+		this.eventName = eventName;
+	}
+
+	public java.lang.String getEventOwner() {
+		return this.eventOwner;
+	}
+
+	public void setEventOwner(java.lang.String eventOwner) {
+		this.eventOwner = eventOwner;
+	}
+
+	public Event(long eventID, java.lang.String eventName,
+			java.lang.String eventOwner) {
+		this.eventID = eventID;
+		this.eventName = eventName;
+		this.eventOwner = eventOwner;
+	}
 
 }
