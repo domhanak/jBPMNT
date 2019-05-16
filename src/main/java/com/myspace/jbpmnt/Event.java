@@ -8,20 +8,22 @@ public class Event implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "place")
+	@org.kie.api.definition.type.Label("place")
 	private java.lang.String place;
 
-	@org.kie.api.definition.type.Label(value = "id")
+	@org.kie.api.definition.type.Label("id")
 	private java.lang.Long id;
 
-	@org.kie.api.definition.type.Label(value = "owner")
+	@org.kie.api.definition.type.Label("owner")
 	private java.lang.String owner;
 
-	@org.kie.api.definition.type.Label(value = "date")
+	@org.kie.api.definition.type.Label("date")
 	private java.time.LocalDateTime date;
 
-	@org.kie.api.definition.type.Label(value = "fee")
+	@org.kie.api.definition.type.Label("fee")
 	private float fee;
+
+	private com.myspace.jbpmnt.Customer participants;
 
 	public Event() {
 	}
@@ -66,13 +68,23 @@ public class Event implements java.io.Serializable {
 		this.fee = fee;
 	}
 
+	public com.myspace.jbpmnt.Customer getParticipants() {
+		return this.participants;
+	}
+
+	public void setParticipants(com.myspace.jbpmnt.Customer participants) {
+		this.participants = participants;
+	}
+
 	public Event(java.lang.String place, java.lang.Long id,
-			java.lang.String owner, java.time.LocalDateTime date, float fee) {
+			java.lang.String owner, java.time.LocalDateTime date, float fee,
+			com.myspace.jbpmnt.Customer participants) {
 		this.place = place;
 		this.id = id;
 		this.owner = owner;
 		this.date = date;
 		this.fee = fee;
+		this.participants = participants;
 	}
 
 }
