@@ -13,10 +13,11 @@ public class Customer implements java.io.Serializable {
 	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "CUSTOMER_ID_GENERATOR")
 	@javax.persistence.SequenceGenerator(sequenceName = "CUSTOMER_ID_SEQ", name = "CUSTOMER_ID_GENERATOR")
 	private java.lang.Long id;
-	private java.lang.String name;
 	private java.lang.Float coins;
 
 	private java.time.LocalDate registrationDate;
+
+	private java.lang.String email;
 
 	public Customer() {
 	}
@@ -27,14 +28,6 @@ public class Customer implements java.io.Serializable {
 
 	public void setId(java.lang.Long id) {
 		this.id = id;
-	}
-
-	public java.lang.String getName() {
-		return this.name;
-	}
-
-	public void setName(java.lang.String name) {
-		this.name = name;
 	}
 
 	public java.lang.Float getCoins() {
@@ -53,12 +46,20 @@ public class Customer implements java.io.Serializable {
 		this.registrationDate = registrationDate;
 	}
 
-	public Customer(java.lang.Long id, java.lang.String name,
-			java.lang.Float coins, java.time.LocalDate registrationDate) {
+	public java.lang.String getEmail() {
+		return this.email;
+	}
+
+	public void setEmail(java.lang.String email) {
+		this.email = email;
+	}
+
+	public Customer(java.lang.Long id, java.lang.Float coins,
+			java.time.LocalDate registrationDate, java.lang.String email) {
 		this.id = id;
-		this.name = name;
 		this.coins = coins;
 		this.registrationDate = registrationDate;
+		this.email = email;
 	}
 
 }
