@@ -12,12 +12,6 @@
     <work-item-handlers>
         <work-item-handler>
             <resolver>mvel</resolver>
-            <identifier>new org.jbpm.process.workitem.ifttt.IFTTTWorkitemHandler("jbpmnt_b9f102184d")</identifier>
-            <parameters/>
-            <name>IFTTT</name>
-        </work-item-handler>
-        <work-item-handler>
-            <resolver>mvel</resolver>
             <identifier>new org.jbpm.process.workitem.email.EmailWorkItemHandler(null, "-1", null, null, true)</identifier>
             <parameters/>
             <name>Email</name>
@@ -27,6 +21,12 @@
             <identifier>new org.jbpm.process.workitem.rest.RESTWorkItemHandler()</identifier>
             <parameters/>
             <name>Rest</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new org.jbpm.process.workitem.ifttt.IFTTTWorkitemHandler("jbpmnt_b9f102184d")</identifier>
+            <parameters/>
+            <name>IFTTTCall</name>
         </work-item-handler>
     </work-item-handlers>
     <environment-entries/>
