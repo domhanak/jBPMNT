@@ -3,17 +3,17 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>mirror-central-nightly</id>
-        <url>http://bxms-qe.rhev-ci-vms.eng.rdu2.redhat.com:8081/nexus/content/groups/rhba-master-nightly/</url>
-        <source>SETTINGS</source>
+        <id>local</id>
+        <url>/home/dhanak/.m2/repository</url>
+        <source>LOCAL</source>
       </metadata>
     </repository>
     <repository>
       <include>true</include>
       <metadata>
-        <id>local</id>
-        <url>/home/dhanak/.m2/repository</url>
-        <source>LOCAL</source>
+        <id>mirror-central-nightly</id>
+        <url>http://bxms-qe.rhev-ci-vms.eng.rdu2.redhat.com:8081/nexus/content/groups/rhba-master-nightly/</url>
+        <source>SETTINGS</source>
       </metadata>
     </repository>
   </repositories>
