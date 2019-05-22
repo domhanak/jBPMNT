@@ -6,7 +6,7 @@
   <artifactId>jBPMNT</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>kjar</packaging>
-  <name>jBPMNT</name>
+  <name>Sportbook4000</name>
   <description>PV207</description>
   <dependencies>
     <dependency>
