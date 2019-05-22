@@ -81,6 +81,11 @@
       <version>7.18.0.Final-redhat-00002</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.jbpm.contrib</groupId>
+      <artifactId>ifttt-workitem</artifactId>
+      <version>7.21.0.Final</version>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
