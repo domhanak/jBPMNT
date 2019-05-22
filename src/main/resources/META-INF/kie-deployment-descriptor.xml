@@ -28,6 +28,12 @@
             <parameters/>
             <name>Rest</name>
         </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new org.jbpm.process.workitem.ifttt.IFTTTWorkitemHandler("uUL4VDZk")</identifier>
+            <parameters/>
+            <name>IFTTTCall</name>
+        </work-item-handler>
     </work-item-handlers>
     <environment-entries/>
     <configurations/>
