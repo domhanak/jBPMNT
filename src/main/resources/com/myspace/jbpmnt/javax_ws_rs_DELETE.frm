@@ -1,0 +1,1 @@
+{"id":"6e5553c3-8d25-4729-b18a-a04d9b32a7e4","name":"javax_ws_rs_DELETE","model":{"source":"EXTERNAL","className":"javax.ws.rs.DELETE","name":"DELETE","properties":[],"formModelType":"org.kie.workbench.common.forms.data.modeller.model.DataObjectFormModel"},"fields":[],"layoutTemplate":{"version":2,"style":"FLUID","layoutProperties":{},"rows":[]}}
